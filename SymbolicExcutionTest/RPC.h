@@ -19,16 +19,16 @@ typedef struct{
 	outC_THC_ANA_TIME_DEPENDENT Context_1;
 }outC_RPC;
 
-extern void RPC_SE(kcg_bool IN_MNB_status,
-kcg_bool IN_MNB_value,
-kcg_bool I_A_status,
-kcg_bool I_A_value,
-kcg_real SVAL,
-kcg_real HYST,
-kcg_bool O_TEMP_status,
-kcg_bool O_TEMP_value,
-kcg_bool O_A_WARING_status,
-kcg_bool O_A_WARING_value);
+//extern void RPC_SE(kcg_bool IN_MNB_status,
+//kcg_bool IN_MNB_value,
+//kcg_bool I_A_status,
+//kcg_bool I_A_value,
+//kcg_real SVAL,
+//kcg_real HYST,
+//kcg_bool O_TEMP_status,
+//kcg_bool O_TEMP_value,
+//kcg_bool O_A_WARING_status,
+//kcg_bool O_A_WARING_value);
 
 extern void RPC(inC_RPC *inC, outC_RPC *outC);
 
