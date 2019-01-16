@@ -14,4 +14,47 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RPC.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DFL_POL_TIME_DEPENDENT_binary.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FSF_POL_TIME_INDEPENDENT_analog.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="THC_ANA_TIME_DEPENDENT.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="kcg_const.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="kcg_types.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DFL_POL_TIME_DEPENDENT_binary.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FSF_POL_TIME_INDEPENDENT_analog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="kcg_const.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="kcg_types.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RPC.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="THC_ANA_TIME_DEPENDENT.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>

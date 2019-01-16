@@ -115,6 +115,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DFL_POL_TIME_DEPENDENT_binary.c" />
+    <ClCompile Include="FSF_POL_TIME_INDEPENDENT_analog.c" />
+    <ClCompile Include="kcg_const.c" />
+    <ClCompile Include="kcg_types.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="RPC.c" />
+    <ClCompile Include="THC_ANA_TIME_DEPENDENT.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DFL_POL_TIME_DEPENDENT_binary.h" />
+    <ClInclude Include="FSF_POL_TIME_INDEPENDENT_analog.h" />
+    <ClInclude Include="kcg_const.h" />
+    <ClInclude Include="kcg_types.h" />
+    <ClInclude Include="RPC.h" />
+    <ClInclude Include="THC_ANA_TIME_DEPENDENT.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
