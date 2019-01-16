@@ -18,16 +18,16 @@ void main()
 	kcg_bool O_TEMP_value;
 	kcg_bool O_A_WARING_status;
 	kcg_bool O_A_WARING_value;
-	klee_make_symbolic(&inC.IN_MNB.status, sizeof(inC.IN_MNB.status), "IN_MNB_status");
-	klee_make_symbolic(&inC.IN_MNB.value, sizeof(inC.IN_MNB.value), "IN_MNB_value");
-	klee_make_symbolic(&inC.I_A.status, sizeof(inC.I_A.status), "I_A_status");
-	klee_make_symbolic(&inC.I_A.value, sizeof(inC.I_A.value), "I_A_value");
-	klee_make_symbolic(&inC.SVAL, sizeof(inC.SVAL), "SVAL");
-	klee_make_symbolic(&inC.HYST, sizeof(inC.HYST), "HYST");
-	klee_make_symbolic(&outC.O_TEMP.status, sizeof(outC.O_TEMP.status), "O_TEMP_status");
-	klee_make_symbolic(&outC.O_TEMP.value, sizeof(outC.O_TEMP.value), "O_TEMP_value");
-	klee_make_symbolic(&outC.O_A_WARNING.status, sizeof(outC.O_A_WARNING.status), "O_A_WARING_status");
-	klee_make_symbolic(&outC.O_A_WARNING.value, sizeof(outC.O_A_WARNING.value), "O_A_WARING_value");
-	RPC_reset(&outC);
-	RPC(&inC, &outC);
+	klee_make_symbolic(&IN_MNB_status, sizeof(IN_MNB_status), "IN_MNB_status");
+	klee_make_symbolic(&IN_MNB_value, sizeof(IN_MNB_value), "IN_MNB_value");
+	klee_make_symbolic(&I_A_status, sizeof(I_A_status), "I_A_status");
+	klee_make_symbolic(&I_A_value, sizeof(I_A_value), "I_A_value");
+	klee_make_symbolic(&SVAL, sizeof(SVAL), "SVAL");
+	klee_make_symbolic(&HYST, sizeof(HYST), "HYST");
+	klee_make_symbolic(&O_TEMP_status, sizeof(O_TEMP_status), "O_TEMP_status");
+	klee_make_symbolic(&O_TEMP_value, sizeof(O_TEMP_value), "O_TEMP_value");
+	klee_make_symbolic(&O_A_WARING_status, sizeof(O_A_WARING_status), "O_A_WARING_status");
+	klee_make_symbolic(&O_A_WARING_value, sizeof(O_A_WARING_value), "O_A_WARING_value");
+	//RPC_reset(O_TEMP_status, O_TEMP_value);
+	RPC_SE(IN_MNB_status,IN_MNB_value,I_A_status,I_A_value,SVAL,HYST,O_TEMP_status, O_TEMP_value, O_A_WARING_status, O_A_WARING_value);
 }
